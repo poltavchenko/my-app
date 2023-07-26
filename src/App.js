@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import CounterApp from './components/counterApp/CounterApp';
 import './App.css';
 
 class WhoAmI extends Component {
@@ -11,7 +12,6 @@ class WhoAmI extends Component {
   }
 
   nextYear = () => {
-    console.log('+++');
     this.setState(state => ({
       years: ++state.years
     }))
@@ -34,6 +34,8 @@ function App() {
     <div className="App">
       <WhoAmI name="John" surname="Smith" link="facebook.com"/>
       <WhoAmI name="Ivan" surname="Ivanov" link="vk.com"/>
+
+      <CounterApp counter={12} />
     </div>
   );
 }
