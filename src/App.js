@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import CounterApp from './components/counterApp/CounterApp';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class WhoAmI extends Component {
   constructor(props) {
